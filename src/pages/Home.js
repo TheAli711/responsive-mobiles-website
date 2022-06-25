@@ -2,9 +2,11 @@ import React from "react";
 import BrowseByBudgetCard from "../components/BrowseByBudgetCard/BrowseByBudgetCard";
 import CustomCarousel from "../components/Carousel/Carousel";
 import DesktopMultiCarousel from "../components/Carousel/DesktopMultiCarousel";
+import PopularComparisonCard from "../components/ComparisonCard/PopularComparisonCard";
 import ComingSoonCard from "../components/MobileInfoCard/ComingSoonCard";
 import MobileInfoCard from "../components/MobileInfoCard/MobileInfoCard";
 import PopularMobileCard from "../components/MobileInfoCard/PopularMobileCard";
+import TopWatches from "../components/WatchCard/TopWathes";
 
 function Home() {
   return (
@@ -99,6 +101,51 @@ function Home() {
             <PopularMobileCard />
             <PopularMobileCard />
             <PopularMobileCard />
+          </div>
+        </div>
+      </div>
+      <div className="col-span-2"></div>
+
+      <div className="col-span-2 bg-gray-100"></div>
+      <div className="col-span-8 p-6 flex justify-center bg-gray-100 py-4">
+        <div className="bg-white p-4 w-full flex justify-center">
+          Ads Placement
+        </div>
+      </div>
+      <div className="col-span-2 bg-gray-100"></div>
+
+      <div className="col-span-2"></div>
+      <div className="col-span-8 flex flex-col gap-10 my-12">
+        <div className="flex flex-col gap-4 mt-10">
+          <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div>Top Watches</div>
+            <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
+              See More {">"}
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
+            <TopWatches />
+            <TopWatches />
+            <TopWatches />
+            <TopWatches />
+          </div>
+        </div>
+      </div>
+      <div className="col-span-2"></div>
+
+      <div className="col-span-2"></div>
+      <div className="col-span-8 flex flex-col gap-10 my-12">
+        <div className="flex flex-col gap-4 mt-10">
+          <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div>Popular Comparisons</div>
+            <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
+              See More {">"}
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-6">
+            <PopularComparisonCard />
+            <PopularComparisonCard />
+            <PopularComparisonCard />
           </div>
         </div>
       </div>
