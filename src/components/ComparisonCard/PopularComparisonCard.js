@@ -1,6 +1,5 @@
 import { Card } from "@mui/material";
 import React from "react";
-import CompareButton from "../CompareButton/CompareButton";
 
 function PopularComparisonCard() {
   return (
