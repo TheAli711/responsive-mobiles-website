@@ -8,6 +8,7 @@ import { IconButton } from "@mui/material";
 
 function Navbar() {
   const [isMobNavOpen, setIsMobNavOpen] = useState(false);
+  const [isMobSearchOpen, setIsMobSearchOpen] = useState(false);
 
   return (
     <nav className="w-full p-4 bg-blue-600 text-white">
@@ -50,7 +51,24 @@ function Navbar() {
         <div>Logo</div>
         <div className="flex items-center gap-4">
           <div className="">
-            <SearchOutlined />
+            {isMobSearchOpen ? (
+              <div className="bg-white text-gray-500">
+                <IconButton
+                  onClick={() => setIsMobSearchOpen(false)}
+                  color="inherit"
+                >
+                  <CloseIcon />
+                </IconButton>
+                <input type="text" className="focus:outline-0" />
+              </div>
+            ) : (
+              <IconButton
+                onClick={() => setIsMobSearchOpen(true)}
+                color="inherit"
+              >
+                <SearchOutlined />
+              </IconButton>
+            )}
           </div>
           <div>
             <NotificationsNoneIcon />
