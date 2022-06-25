@@ -8,11 +8,11 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 function Footer() {
   return (
     <div className="w-full bg-black text-white text-sm p-4">
-      <div className="hidden xl:grid grid-cols-12">
+      <div className="flex flex-col xl:grid grid-cols-12">
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-8">
-          <div className="grid grid-cols-5 pt-8 gap-8 mb-12">
-            <div className="flex flex-col">
+          <div className="flex flex-col xl:grid xl:grid-cols-5 xl:pt-8 gap-2 xl:mb-12">
+            <div className="hidden xl:flex flex-col gap-2">
               <div className="text-2xl">Logo</div>
               <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -20,65 +20,120 @@ function Footer() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <div>Softliee</div>
+              <div className="text-lg font-bold">Softliee</div>
               <div>
-                <ArrowRightIcon /> Our Blog
+                <ArrowRightIcon fontSize="small" /> Our Blog
               </div>
               <div>
-                <ArrowRightIcon /> Contact Us
+                <ArrowRightIcon fontSize="small" /> Contact Us
               </div>
               <div>
-                <ArrowRightIcon /> Advertise with us
+                <ArrowRightIcon fontSize="small" /> Advertise with us
               </div>
               <div>
-                <ArrowRightIcon /> Privacy Policy
+                <ArrowRightIcon fontSize="small" /> Privacy Policy
               </div>
               <div>
-                <ArrowRightIcon /> Terms & Conditions
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div>Top Brands</div>
-              <div>
-                <ArrowRightIcon /> Apple
-              </div>
-              <div>
-                <ArrowRightIcon /> Samsung
-              </div>
-              <div>
-                <ArrowRightIcon /> Huawei
-              </div>
-              <div>
-                <ArrowRightIcon /> Oppo
-              </div>
-              <div>
-                <ArrowRightIcon /> Realme
+                <ArrowRightIcon fontSize="small" /> Terms & Conditions
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <div>Sections</div>
+              <div className="flex text-lg font-bold">Top Brands</div>
+              <div className="flex gap-2">
+                <div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Apple
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Samsung
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Huawei
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Oppo
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Realme
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Apple
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Samsung
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Huawei
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Oppo
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Realme
+                  </div>
+                </div>
+                <div className="xl:hidden">
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Apple
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Samsung
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Huawei
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Oppo
+                  </div>
+                  <div>
+                    <ArrowRightIcon fontSize="small" />
+                    Realme
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hidden xl:flex flex-col gap-2">
+              <div className="text-lg font-black">Sections</div>
               <div>
-                <ArrowRightIcon /> Top Mobiles
+                <ArrowRightIcon fontSize="small" /> Top Mobiles
               </div>
               <div>
-                <ArrowRightIcon /> Top Watches
+                <ArrowRightIcon fontSize="small" /> Top Watches
               </div>
               <div>
-                <ArrowRightIcon /> Top Tablets
+                <ArrowRightIcon fontSize="small" /> Top Tablets
               </div>
               <div>
-                <ArrowRightIcon /> Tech News
+                <ArrowRightIcon fontSize="small" /> Tech News
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <div>
-                Download US
-              </div>
-              <img className="border border-white rounded-lg" src="assets/images/getitongoogleplay.png" alt="" />
+              <div className="text-lg font-black">Download US</div>
+              <img
+                className="border border-white rounded-lg"
+                src="assets/images/getitongoogleplay.png"
+                alt=""
+              />
             </div>
           </div>
           <hr />
-          <div className="flex justify-between">
+          <div className="flex flex-col xl:flex-row justify-between">
             <div>
               Softliee Pakistan &copy; 2020 All Rights Reserved{" "}
               <span className="text-red-500">Softliee.com</span>
