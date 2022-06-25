@@ -129,6 +129,7 @@ function Footer() {
                 className="border border-white rounded-lg"
                 src="assets/images/getitongoogleplay.png"
                 alt=""
+                style={{ width: 100 }}
               />
             </div>
           </div>
