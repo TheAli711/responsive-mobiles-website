@@ -13,7 +13,7 @@ function Footer() {
         <div className="col-span-8 flex flex-col gap-8">
           <div className="flex flex-col xl:grid xl:grid-cols-5 xl:pt-8 gap-2 xl:mb-12">
             <div className="hidden xl:flex flex-col gap-2">
-              <div className="text-2xl">Logo</div>
+              <img src="/assets/images/web-logo.png" width={100} alt="" />
               <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Blanditiis nesciunt molestias, nisi consequu et voluptate

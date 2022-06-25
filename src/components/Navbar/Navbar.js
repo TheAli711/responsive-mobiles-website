@@ -15,7 +15,7 @@ function Navbar() {
       <div className="hidden xl:grid grid-cols-12 text-sm">
         <div className="col-span-2"></div>
         <div className="col-span-8 flex justify-between items-center">
-          <div>Logo</div>
+        <img width={90} src="/assets/images/web-logo.png" alt="" />
           <div className="flex gap-5 items-center">
             <div>Tech News</div>
             <div>New Mobiles</div>
@@ -23,7 +23,7 @@ function Navbar() {
             <div>Contact Us</div>
             <div>About Us</div>
           </div>
-          <div className="flex justify-between gap-10 items-center">
+          <div className="flex justify-between gap-4 items-center">
             <div className="bg-white text-gray-500 p-1">
               <SearchOutlined />
               <input type="text" className="focus:outline-0" />
@@ -48,7 +48,7 @@ function Navbar() {
             {isMobNavOpen ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>
-        <div>Logo</div>
+        <img src="/assets/images/web-logo.png" alt="" />
         <div className="flex items-center gap-4">
           <div className="">
             {isMobSearchOpen ? (
