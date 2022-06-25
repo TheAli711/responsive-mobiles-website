@@ -17,13 +17,13 @@ function Home() {
         <div className="col-span-8 flex flex-col gap-10">
           <CustomCarousel />
           <div className="flex flex-col gap-2">
-            <div className="border-l-4 border-pink-600 pl-2">
+            <div className="border-l-4 border-pink-600 pl-2 font-bold">
               Browse By Brands
             </div>
             <DesktopMultiCarousel />
           </div>
           <div className="flex flex-col gap-4">
-            <div className="border-l-4 border-pink-600 pl-2">
+            <div className="border-l-4 border-pink-600 pl-2 font-bold">
               Browse By Budget
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
@@ -50,21 +50,37 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Latest Mobiles</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
-              <MobileInfoCard />
+              <div>
+                <MobileInfoCard />
+              </div>
+              <div>
+                <MobileInfoCard />
+              </div>
+              <div>
+                <MobileInfoCard />
+              </div>
+              <div>
+                <MobileInfoCard />
+              </div>
+              <div className="hidden md:block">
+                <MobileInfoCard />
+              </div>
+              <div className="hidden md:block">
+                <MobileInfoCard />
+              </div>
+              <div className="hidden md:block">
+                <MobileInfoCard />
+              </div>
+              <div className="hidden md:block">
+                <MobileInfoCard />
+              </div>
             </div>
           </div>
         </div>
@@ -73,7 +89,7 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Upcoming Mobiles</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
@@ -82,8 +98,12 @@ function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
               <ComingSoonCard />
               <ComingSoonCard />
-              <ComingSoonCard />
-              <ComingSoonCard />
+              <div className="hidden md:block">
+                <ComingSoonCard />
+              </div>
+              <div className="hidden md:block">
+                <ComingSoonCard />
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +112,7 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Popular Mobiles</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
@@ -101,8 +121,12 @@ function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
               <PopularMobileCard />
               <PopularMobileCard />
-              <PopularMobileCard />
-              <PopularMobileCard />
+              <div className="hidden md:block">
+                <PopularMobileCard />
+              </div>
+              <div className="hidden md:block">
+                <PopularMobileCard />
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +143,7 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Top Watches</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
@@ -128,8 +152,12 @@ function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
               <TopWatches />
               <TopWatches />
-              <TopWatches />
-              <TopWatches />
+              <div className="hidden md:block">
+                <TopWatches />
+              </div>
+              <div className="hidden md:block">
+                <TopWatches />
+              </div>
             </div>
           </div>
         </div>
@@ -138,13 +166,13 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Popular Comparisons</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-6">
               <PopularComparisonCard />
               <PopularComparisonCard />
               <PopularComparisonCard />
@@ -164,7 +192,7 @@ function Home() {
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10 my-12">
           <div className="flex flex-col gap-4 mt-10">
-            <div className="flex justify-between border-l-4 border-pink-600 pl-2">
+            <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
               <div>Tech News</div>
               <div className="p-1 px-3 text-sm text-white bg-gray-600 rounded-full">
                 See More {">"}
@@ -175,8 +203,12 @@ function Home() {
               <TechNewCard />
               <TechNewCard />
               <TechNewCard />
-              <TechNewCard />
-              <TechNewCard />
+              <div className="hidden md:block">
+                <TechNewCard />
+              </div>
+              <div className="hidden md:block">
+                <TechNewCard />
+              </div>
             </div>
           </div>
         </div>

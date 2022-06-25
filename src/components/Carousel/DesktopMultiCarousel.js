@@ -13,7 +13,12 @@ function DesktopMultiCarousel(props) {
         {
           name: "Random Name #1",
           description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
+          image: "assets/images/samsung-logo.png",
+        },
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/vivo-logo.png",
         },
         {
           name: "Random Name #1",
@@ -23,41 +28,7 @@ function DesktopMultiCarousel(props) {
         {
           name: "Random Name #1",
           description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-      ],
-    },
-    {
-      data: [
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
-        },
-        {
-          name: "Random Name #1",
-          description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
+          image: "assets/images/samsung-logo.png",
         },
       ],
     },
@@ -71,7 +42,12 @@ function DesktopMultiCarousel(props) {
         {
           name: "Random Name #1",
           description: "Probably the most random thing you have ever seen!",
-          image: "assets/images/iphone-logo.png",
+          image: "assets/images/samsung-logo.png",
+        },
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/vivo-logo.png",
         },
         {
           name: "Random Name #1",
@@ -81,12 +57,36 @@ function DesktopMultiCarousel(props) {
         {
           name: "Random Name #1",
           description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/samsung-logo.png",
+        },
+      ],
+    },
+    {
+      data: [
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
           image: "assets/images/iphone-logo.png",
         },
         {
           name: "Random Name #1",
           description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/samsung-logo.png",
+        },
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/vivo-logo.png",
+        },
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
           image: "assets/images/iphone-logo.png",
+        },
+        {
+          name: "Random Name #1",
+          description: "Probably the most random thing you have ever seen!",
+          image: "assets/images/samsung-logo.png",
         },
       ],
     },
@@ -122,11 +122,11 @@ function Item(props) {
   return (
     <div className="flex justify-around" style={{ height: 50 }}>
       {props.item.data.map((obj) => (
-        <div key={obj.name} className="drop-shadow-2xl shadow-black	 rounded-lg px-4">
+        <div key={obj.name} className="px-4">
         <img
           src={obj.image}
-          className=""
-          style={{ width: "130px", height: 35, objectFit: "contain" }}
+          className="drop-shadow-lg rounded-full"
+          style={{ width: "90px", height: 35, objectFit: "contain" }}
           alt=""
         />
         </div>
