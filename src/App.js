@@ -3,11 +3,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Toolbar from "./components/Toolbar/Toolbar";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
+      <div className="hidden xl:flex">
+        <Toolbar />
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -15,7 +19,7 @@ function App() {
         <Route path="invoices" element={<Invoices />} /> */}
         </Routes>
       </BrowserRouter>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
