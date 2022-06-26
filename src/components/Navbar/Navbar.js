@@ -48,7 +48,7 @@ function Navbar() {
             {isMobNavOpen ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
         </div>
-        <img src="/assets/images/web-logo.png" alt="" />
+        <img width={90} src="/assets/images/web-logo.png" alt="" />
         <div className="flex items-center gap-4">
           <div className="">
             {isMobSearchOpen ? (

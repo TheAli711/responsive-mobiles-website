@@ -25,7 +25,7 @@ function BrandMobilesPage() {
           <div className="flex justify-between border-l-4 border-pink-600 pl-2 font-bold">
             <div>Filter Devices</div>
           </div>
-          <div className="flex p-2 bg-gray-100 text-red-600 justify-between">
+          <div className="flex p-2 bg-gray-100 text-red-600 justify-between flex-wrap">
             <div className="flex flex-col">
               <label className="text-black" htmlFor="">
                 Date
