@@ -13,10 +13,11 @@ function Footer() {
         <div className="col-span-8 flex flex-col gap-8">
           <div className="flex flex-col xl:grid xl:grid-cols-5 xl:pt-8 gap-2 xl:mb-12">
             <div className="hidden xl:flex flex-col gap-2">
-              <img src="/assets/images/web-logo.png" width={100} alt="" />
+              <img src="/assets/images/web-logo.png" width={80} alt="" />
               <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Blanditiis nesciunt molestias, nisi consequu et voluptate
+                Blanditiis nesciunt molestias, nisi consequu et voluptate amet
+                consectetur adipisicing elit amet consectetur adipis elit
               </div>
             </div>
             <div className="flex flex-col gap-2">

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Toolbar from "./components/Toolbar/Toolbar";
+import BrandMobilesPage from "./pages/BrandMobilesPage";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="expenses" element={<Expenses />} />
-        <Route path="invoices" element={<Invoices />} /> */}
+          <Route path="oppo" element={<BrandMobilesPage />} />
+          {/* <Route path="invoices" element={<Invoices />} /> */}
         </Routes>
       </BrowserRouter>
       <Footer />

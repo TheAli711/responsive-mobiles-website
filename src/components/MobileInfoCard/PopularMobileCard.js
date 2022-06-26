@@ -1,11 +1,10 @@
-import { Card } from "@mui/material";
 import React from "react";
 import CompareButton from "../CompareButton/CompareButton";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 
 function PopularMobileCard() {
   return (
-    <Card className="flex flex-col items-center border p-4">
+    <div className="flex flex-col items-center border p-4 bg-white hover:drop-shadow-xl">
       <img src="assets/images/under15phone.png" alt="" />
       <div className="text-black">Infinix Note 12 G96</div>
       <CompareButton></CompareButton>
@@ -15,7 +14,7 @@ function PopularMobileCard() {
           <SignalCellularAltIcon sx={{ color: 'blue'}} />
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
 

@@ -12,7 +12,7 @@ import TopWatches from "../components/WatchCard/TopWathes";
 function Home() {
   return (
     <>
-      <div className="w-full px-4 md:px-0 md:grid grid-cols-12 mt-10">
+      <div className="w-full px-4 md:px-0 md:grid grid-cols-12 mt-3">
         <div className="col-span-2"></div>
         <div className="col-span-8 flex flex-col gap-10">
           <CustomCarousel />
@@ -216,12 +216,27 @@ function Home() {
       </div>
       <div
         className="col-span-12 py-24 flex flex-col justify-center items-center w-full"
-        style={{ backgroundImage: "url(assets/images/overlay-surface.png)" }}
+        style={{
+          backgroundImage: "url(assets/images/overlay-surface.png)",
+          height: 520,
+        }}
       >
-        <div className="text-2xl font-bold mb-10">Subscribe to Newsletter</div>
+        <div
+          className="font-bold mb-10"
+          style={{ fontSize: "36px", lineHeight: "50px" }}
+        >
+          Subscribe to Newsletter
+        </div>
         <div>
-          <input type="text" className="p-3 focus:outline-none" />
-          <button className="p-3 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+          <input
+            type="text"
+            style={{ width: 570 }}
+            className="p-3 focus:outline-none"
+          />
+          <button
+            style={{ width: 130 }}
+            className="p-3 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+          >
             Subscribe
           </button>
         </div>

@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"),
+    url(./fonts/Manrope/Manrope-VariableFont_wght.ttf) format("trutype");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -13,4 +19,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  font-family: Manrope;
+}
+
+.compare-btn-gradient {
+  background: linear-gradient(90deg, #4958ef 0%, #ee2835 100%);
+}
+
+.coming-soon {
+  background: linear-gradient(90deg, #4958ef 0%, #ee2835 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }

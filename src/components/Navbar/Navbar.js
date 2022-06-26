@@ -15,7 +15,7 @@ function Navbar() {
       <div className="hidden xl:grid grid-cols-12 text-sm">
         <div className="col-span-2"></div>
         <div className="col-span-8 flex justify-between items-center">
-        <img width={90} src="/assets/images/web-logo.png" alt="" />
+        <img width={80} src="/assets/images/web-logo.png" alt="" />
           <div className="flex gap-5 items-center">
             <div>Tech News</div>
             <div>New Mobiles</div>
